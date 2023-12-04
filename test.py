@@ -7,9 +7,9 @@ fig, ax = plt.subplots()
 
 c1 = st.radio('선의 색을 선택하시오', ['red', 'green', 'blue'])
 s1 = st.radio('선의 형태를 선택하시오', ['-', ':', '-.', '--'])
-st.sidebar
+# st.sidebar
 
-fig, ax = plt.subplots()
+# fig, ax = plt.subplots()
 
 x = [] 
 y = []
@@ -17,7 +17,7 @@ for i in range(-20, 21, 1):
     x.append(i)
     y.append(3*i*i - 2*i + 5)
 
-plt.plot(x, y, color =c1, linestyle='-.', marker='h')
+plt.plot(x, y, color =c1, linestyle=s1, marker='h')
 
 st.pyplot(fig)
 
